@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   productsContainer.addEventListener("click", (e) => {
     if (e.target.classList.contains("fav-btn")) {
-      console.log(e.target);
       const productId = e.target.closest(".products__card").dataset.id;
       toggleFavorite(productId);
     }
