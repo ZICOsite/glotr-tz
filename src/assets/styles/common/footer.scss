@@ -1,0 +1,47 @@
+.footer {
+    background: #fff;
+    padding: 24px 0;
+    margin-top: 46px;
+
+    &__box {
+        display: grid;
+        gap: 20px;
+    }
+
+    &__btn {
+        padding: 12px;
+        text-align: center;
+        color: #fff;
+        font-weight: 500;
+        max-width: 343px;
+    }
+
+    &__txt {
+        color: rgba(102, 112, 133, 1);
+        font-weight: 500;
+        font-size: clamp(14px, 2vw, 16px);
+        text-wrap: balance;
+    }
+
+    &__list {
+        padding: 15px 0;
+        display: flex;
+        gap: 30px;
+        border-top: 1px solid rgba(240, 240, 240, 1);
+        border-bottom: 1px solid rgba(240, 240, 240, 1);
+    }
+
+    &__link {
+        display: grid;
+        gap: 8px;
+        place-items: center;
+        color: rgba(52, 64, 84, 1);
+    }
+
+    &__copyright {
+        color: rgba(102, 112, 133, 1);
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+}

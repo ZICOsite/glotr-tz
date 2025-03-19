@@ -1,0 +1,38 @@
+.partners {
+  padding-top: 46px;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    color: rgba(52, 64, 84, 1);
+  }
+
+  &__cards {
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+    overflow-x: auto;
+
+    &-box {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        flex-grow: 1;
+
+        @media (width <= 768px) {
+            grid-template-columns: repeat(4, minmax(100px, 1fr));
+        }
+    }
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 4/3;
+    background: #fff;
+    border-radius: 8px;
+  }
+}

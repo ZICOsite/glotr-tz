@@ -1,0 +1,92 @@
+.products {
+  padding-top: 46px;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    color: rgba(52, 64, 84, 1);
+  }
+
+  &__cards {
+    margin-top: 14px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+  }
+
+  &__card {
+    background: #fff;
+    border-radius: 8px;
+
+    &-top {
+      position: relative;
+      padding: 22px 30px;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+      }
+
+      svg {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+
+        &.active {
+          fill: rgba(242, 66, 54, 1);
+
+          path {
+            stroke: rgba(242, 66, 54, 1);
+          }
+        }
+      }
+    }
+
+    &-content {
+      padding: 12px 12px 9px;
+      border-bottom: 1px solid rgba(246, 248, 249, 1);
+
+      h3 {
+        color: rgba(52, 64, 84, 1);
+        font-size: 14px;
+        font-weight: 500;
+        text-wrap: balance;
+        margin-bottom: 4px;
+        line-height: 1.2;
+      }
+
+      p.products__card-order {
+        color: rgba(18, 154, 27, 1);
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+
+      p.products__card-price {
+        color: rgba(242, 66, 54, 1);
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+
+    &-bottom {
+      padding: 8px 12px 18px;
+
+      p.products__card-magazine {
+        font-size: 14px;
+        margin-bottom: 6px;
+      }
+
+      p.products__card-city {
+        font-size: 13px;
+        color: rgba(102, 112, 133, 1);
+      }
+    }
+  }
+}

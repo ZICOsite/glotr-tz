@@ -1,0 +1,40 @@
+.extra {
+  padding-top: 46px;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    color: rgba(52, 64, 84, 1);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+
+    @media (width <= 992px) {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+
+    &-link {
+      background: #fff;
+      padding: 8px 12px;
+      color: rgba(52, 64, 84, 1);
+      border: 1px solid transparent;
+      transition: 0.4s;
+
+      @media (width <= 992px) {
+        font-size: 14px;
+      }
+
+      &:hover {
+        border: 1px solid rgba(242, 66, 54, 1);
+        color: rgba(242, 66, 54, 1);
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.categories {
+
+  &__swiper {
+    .swiper-slide {
+      width: 152px;
+      height: 190px;
+
+      @media (width <= 480px) {
+        width: 80px;
+        height: 118px;
+      }
+    }
+
+    &-link {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      text-align: center;
+      align-items: center;
+      color: rgba(52, 64, 84, 1);
+      font-weight: 500;
+
+      @media (width <= 480px) {
+        font-size: 12px;
+      }
+
+      img {
+        border-radius: 8px;
+        background: #fff;
+        width: 100%;
+        height: calc(100% - 38px);
+        object-fit: scale-down;
+        padding: 10px;
+      }
+    }
+  }
+}
