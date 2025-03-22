@@ -29,6 +29,10 @@
     overflow-y: auto;
     translate: 100% 0;
     transition: 0.4s;
+
+    @media (width <= 992px) {
+      width: 90%;
+    }
   }
 
   &__title {
